@@ -135,6 +135,9 @@ h6 {
     cursor: pointer;
 }
 
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: #eee;
+}
 .nav {
     position: absolute;
     z-index: 9000;
