@@ -196,6 +196,7 @@ nav.open {
 .wrapper {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .fullscreen {
@@ -245,16 +246,15 @@ nav.open {
     position: relative;
     display: flex;
     width: 100%;
-    padding-top: 20px;
+    padding-top:20px;
     flex-wrap: wrap;
-    background-color: #f8f8f8;
 }
 
 .pod {
     position: relative;
     width: 100%;
     height: 350px;
-    margin-bottom: 10px;
+    margin-bottom:10px;
     margin-left: .75%;
     transition: height .2s ease;
     border-radius: 3px;
@@ -370,8 +370,61 @@ nav.open {
 .skills ul li:hover {
     background-color: rgba(0, 0, 0, 0.25);
 }
+.wrapper {
+    background-color: #f8f8f8;
+}
+/* Contact form */
+.contact-form h1 {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 20px 0;
 
+}
+.contact-form {
+width: 100%;
+height: 100%;
+text-align: center;   
+padding-top: 25%;
+}
 
+.contact-form form {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.contact-form form label
+{
+    display: block;
+font-size: 1.25em;
+padding: 10px 5px;
+
+}
+.contact-form form input{
+    width: 90%;
+    padding: 7px;
+    margin: 10px;
+    border-radius:5px;
+}
+.contact-form form textarea {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 90%;
+    border-radius: 5px;
+}
+.contact-form form button {
+    padding: 15px;
+    background-color: #3591d0;
+    color: #f8f8f8;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    position: absolute;
+    margin-top: 10px;
+    left: 50%;
+    margin-left: -40%;
+    margin-bottom: 10px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -474,6 +527,7 @@ a {
    ========================================================================== */
 
 @media all and (min-width:768px) {
+    
     .pod {
         width: 49%;
         margin-bottom: 5px;
@@ -481,6 +535,32 @@ a {
     .pod:first-child {
         margin-top: 0;
     }
+    /* Contact form */
+.contact-form {
+  padding-top: 18%;
+}
+
+.contact-form form {
+    width: 80%;
+
+}
+.contact-form label
+{
+text-align: left;
+}
+.contact-form form input{
+    
+    padding: 10px;
+}
+
+.contact-form form button {
+    padding: 15px;
+    width: 25%;
+    margin-top: 25px;
+    left: 50%;
+    margin-left:-12.5%;
+}
+
 }
 
 @media all and (min-width: 1024px) {
@@ -581,6 +661,35 @@ a {
     .skills div {
         padding-bottom: 0;
     }
+
+    /* Contact form */
+.contact-form {
+  padding-top: 10%;
+}
+
+.contact-form form {
+    width: 35%;
+
+}
+.contact-form label
+{
+font-size: 1.5em;
+}
+.contact-form form input{
+    
+    padding: 10px;
+}
+.contact-form form textarea {
+    font-size: 1.25em;
+}
+.contact-form form button {
+    padding: 15px;
+    width: 12.5%;
+    margin-top: 25px;
+    left: 50%;
+    margin-left:-6.25%;
+}
+}
     /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
